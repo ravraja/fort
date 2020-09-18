@@ -37,8 +37,9 @@ jobs:
            --detect.project.name="${{ secrets.BLACKDUCK_PROJECT_NAME }}" \
            --blackduck.api.token="${{ secrets.BLACKDUCK_API_TOKEN }}" \
            --detect.excluded.detector.types=GIT \
-           --detect.project.version.name="1.3-beta" \
+           --detect.project.version.name="1.4-beta" \
            --detect.blackduck.signature.scanner.exclusion.name.pattern=.git,node_modules \
+           --detect.detector.search.depth=5 \
            '
 #       - name: Commit changes
 #         uses: EndBug/add-and-commit@v4
