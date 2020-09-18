@@ -40,6 +40,7 @@ jobs:
            --detect.project.version.name="1.4-beta" \
            --detect.blackduck.signature.scanner.exclusion.name.pattern=.git,node_modules \
            --detect.detector.search.depth=5 \
+           --detect.npm.include.dev.dependencies=false \
            '
 #       - name: Commit changes
 #         uses: EndBug/add-and-commit@v4
